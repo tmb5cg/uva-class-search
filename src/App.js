@@ -29,7 +29,7 @@ const configurationOptions = {
       // 1. Search by name of video game.
       title: {}
     },
-    // 2. Results: name of the video game, its type, days, scores, and mnemonic.
+
     result_fields: {
       title: {
         // A snippet means that matching search terms will be highlighted via <em> tags.
@@ -52,8 +52,6 @@ const configurationOptions = {
         }
       },
       number: {
-        // Scores are numeric, so we won't attempt to snippet these, we'll just use the raw
-        // value.
         raw: {}
       },
       units: {
@@ -66,7 +64,6 @@ const configurationOptions = {
         }
       }
     },
-    // 3. Facet by scores, type, days, and mnemonic, which we'll use to build filters later.
     facets: {
       units: {
         type: "range",
@@ -99,8 +96,8 @@ const configurationOptions = {
       old_reqs_multi: { type: "value", size: 100 },
     }
   }
-};
-// Step #4, SearchProvider: The Finishing Touches.
+};                                                                                                                                                                                                                                                                                                                                                                 
+// Step #4, SearchProvider
 export default function App() {
   return (
     <SearchProvider config={configurationOptions}>
@@ -116,6 +113,7 @@ export default function App() {
         <li> Click search to display filters/classes </li>
         <li> Need custom lists like CS integration electives </li>
         <li> Add class GPA data, avg professor gpa etc </li>
+        <li> If requirement combination isn't listed, it doesn't exist </li>
       </ul>
       <Sorting
         label={"Sort by"}
@@ -133,8 +131,11 @@ export default function App() {
         ]}
       />
       <h1>New Requirements</h1> 
+      <p1> If combination is not listed, it probably doesn't exist </p1>
       <Facet field="new_reqs_multi" label="Multi-Requirement search" isFilterable={true} />
       <h1>Old Requirements</h1> 
+      <p1> If combination is not listed, it probably doesn't exist </p1>
+
       <Facet field="old_reqs_multi" label="Multi-Requirement search" isFilterable={true} />
 
       <Facet field="units" label="Credits" />
