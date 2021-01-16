@@ -24,6 +24,19 @@ const connector = new AppSearchAPIConnector({
 // Step #3: Configuration Options
 const configurationOptions = {
   apiConnector: connector,
+  alwaysSearchOnInitialLoad: true,
+  autocompleteQuery: {
+    suggestions: {
+      types: {
+        documents: {
+          // Which fields to search for suggestions.
+          fields: ["title"]
+        }
+      },
+      // How many suggestions appear.
+      size: 5
+    }
+  },
   searchQuery: {
     search_fields: {
       // 1. Search by name of video game.
@@ -53,6 +66,24 @@ const configurationOptions = {
       },
       number: {
         raw: {}
+      },
+      description: {
+        snippet: {
+          size: 400,
+          fallback: true
+        }
+      },
+      new_reqs_multi: {
+        snippet: {
+          size: 400,
+          fallback: true
+        }
+      },
+      old_reqs_multi: {
+        snippet: {
+          size: 400,
+          fallback: true
+        }
       },
       units: {
         raw: {}
@@ -100,10 +131,11 @@ const configurationOptions = {
 // Step #4, SearchProvider
 export default function App() {
   return (
+    
     <SearchProvider config={configurationOptions}>
       <div className="App">
       <Layout
-  header={<SearchBox />}
+  header={<SearchBox autocompleteSuggestions={true} />}
   bodyContent={<Results titleField="title"  />} // urlField="image_url" />}
   sideContent={
     <div>
@@ -130,25 +162,26 @@ export default function App() {
           }
         ]}
       />
+
+      <Facet field="type" label="Type" />
+      <Facet field="mnemonic" label="Category" />
       <h1>New Requirements</h1> 
       <p1> If combination is not listed, it probably doesn't exist </p1>
       <Facet field="new_reqs_multi" label="Multi-Requirement search" isFilterable={true} />
       <h1>Old Requirements</h1> 
       <p1> If combination is not listed, it probably doesn't exist </p1>
-
       <Facet field="old_reqs_multi" label="Multi-Requirement search" isFilterable={true} />
 
-      <Facet field="units" label="Credits" />
-      <Facet field="number" label="Course Level" />
-      <Facet field="type" label="Type" />
-      <Facet field="days_full" label="DAYZ [days]" isFilterable={true} />
+      {/* <Facet field="days_full" label="DAYZ [days]" isFilterable={true} /> */}
       <Facet field="dayofweek" label="Day of Week" />
       <Facet field="start_time" label="Start Time" isFilterable={true} />
       <Facet field="end_time" label="End Time" isFilterable={true} />
-      <Facet field="mnemonic" label="Mnemonic" />
+      <Facet field="instructionmode" label="Instruction Mode" />
+
       <Facet field="instructor" label="Instructor" isFilterable={true} />
       <Facet field="room" label="Building" />
-      <Facet field="instructionmode" label="Instruction Mode" />
+      <Facet field="units" label="Credits" />
+      <Facet field="number" label="Course Level" />
 
     </div>
   }
