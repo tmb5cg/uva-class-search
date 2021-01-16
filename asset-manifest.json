@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/video-game-search/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/video-game-search/static/js/main.e03ee2aa.chunk.js",
+    "main.js.map": "/video-game-search/static/js/main.e03ee2aa.chunk.js.map",
+    "runtime-main.js": "/video-game-search/static/js/runtime-main.b5b54549.js",
+    "runtime-main.js.map": "/video-game-search/static/js/runtime-main.b5b54549.js.map",
+    "static/css/2.ee264716.chunk.css": "/video-game-search/static/css/2.ee264716.chunk.css",
+    "static/js/2.7725fe65.chunk.js": "/video-game-search/static/js/2.7725fe65.chunk.js",
+    "static/js/2.7725fe65.chunk.js.map": "/video-game-search/static/js/2.7725fe65.chunk.js.map",
+    "static/js/3.f80f7de5.chunk.js": "/video-game-search/static/js/3.f80f7de5.chunk.js",
+    "static/js/3.f80f7de5.chunk.js.map": "/video-game-search/static/js/3.f80f7de5.chunk.js.map",
+    "index.html": "/video-game-search/index.html",
+    "static/css/2.ee264716.chunk.css.map": "/video-game-search/static/css/2.ee264716.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/video-game-search/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.7725fe65.chunk.js.LICENSE.txt": "/video-game-search/static/js/2.7725fe65.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5b54549.js",
+    "static/css/2.ee264716.chunk.css",
+    "static/js/2.7725fe65.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.e03ee2aa.chunk.js"
+  ]
+}
