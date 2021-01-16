@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/video-game-search/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/video-game-search/static/js/main.e03ee2aa.chunk.js",
-    "main.js.map": "/video-game-search/static/js/main.e03ee2aa.chunk.js.map",
-    "runtime-main.js": "/video-game-search/static/js/runtime-main.b5b54549.js",
-    "runtime-main.js.map": "/video-game-search/static/js/runtime-main.b5b54549.js.map",
-    "static/css/2.ee264716.chunk.css": "/video-game-search/static/css/2.ee264716.chunk.css",
-    "static/js/2.7725fe65.chunk.js": "/video-game-search/static/js/2.7725fe65.chunk.js",
-    "static/js/2.7725fe65.chunk.js.map": "/video-game-search/static/js/2.7725fe65.chunk.js.map",
-    "static/js/3.f80f7de5.chunk.js": "/video-game-search/static/js/3.f80f7de5.chunk.js",
-    "static/js/3.f80f7de5.chunk.js.map": "/video-game-search/static/js/3.f80f7de5.chunk.js.map",
-    "index.html": "/video-game-search/index.html",
-    "static/css/2.ee264716.chunk.css.map": "/video-game-search/static/css/2.ee264716.chunk.css.map",
-    "static/css/main.6dea0f05.chunk.css.map": "/video-game-search/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.7725fe65.chunk.js.LICENSE.txt": "/video-game-search/static/js/2.7725fe65.chunk.js.LICENSE.txt"
+    "main.css": "/uva-class-search/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/uva-class-search/static/js/main.ff811665.chunk.js",
+    "main.js.map": "/uva-class-search/static/js/main.ff811665.chunk.js.map",
+    "runtime-main.js": "/uva-class-search/static/js/runtime-main.ca732a63.js",
+    "runtime-main.js.map": "/uva-class-search/static/js/runtime-main.ca732a63.js.map",
+    "static/css/2.ee264716.chunk.css": "/uva-class-search/static/css/2.ee264716.chunk.css",
+    "static/js/2.bcf5b96f.chunk.js": "/uva-class-search/static/js/2.bcf5b96f.chunk.js",
+    "static/js/2.bcf5b96f.chunk.js.map": "/uva-class-search/static/js/2.bcf5b96f.chunk.js.map",
+    "static/js/3.d015d88b.chunk.js": "/uva-class-search/static/js/3.d015d88b.chunk.js",
+    "static/js/3.d015d88b.chunk.js.map": "/uva-class-search/static/js/3.d015d88b.chunk.js.map",
+    "index.html": "/uva-class-search/index.html",
+    "static/css/2.ee264716.chunk.css.map": "/uva-class-search/static/css/2.ee264716.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/uva-class-search/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.bcf5b96f.chunk.js.LICENSE.txt": "/uva-class-search/static/js/2.bcf5b96f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5b54549.js",
+    "static/js/runtime-main.ca732a63.js",
     "static/css/2.ee264716.chunk.css",
-    "static/js/2.7725fe65.chunk.js",
+    "static/js/2.bcf5b96f.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e03ee2aa.chunk.js"
+    "static/js/main.ff811665.chunk.js"
   ]
 }
