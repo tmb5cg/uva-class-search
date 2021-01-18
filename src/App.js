@@ -8,7 +8,10 @@ import {
   SearchProvider,
   Results,
   SearchBox,
-  Sorting
+  Sorting,
+  BooleanFacet,
+  SingleSelectFacet,
+  SingleLinksFacet
 } from "@elastic/react-search-ui";
 import { Layout } from "@elastic/react-search-ui-views";
 
@@ -25,6 +28,7 @@ const connector = new AppSearchAPIConnector({
 const configurationOptions = {
   apiConnector: connector,
   alwaysSearchOnInitialLoad: true,
+  // disjunctiveFacets: ["acres", "states", "date_established", "location"],
   autocompleteQuery: {
     suggestions: {
       types: {
@@ -146,6 +150,9 @@ export default function App() {
         <li> Need custom lists like CS integration electives </li>
         <li> Add class GPA data, avg professor gpa etc </li>
         <li> If requirement combination isn't listed, it doesn't exist </li>
+        <li> disjunctive facets = can select multiple checkboxes </li>
+        <li> make drop downs, figure out how to hide results </li>
+        {/* https://codesandbox.io/s/national-parks-example-kdyms?fontsize=14&file=/src/App.js:1176-1232 */}
       </ul>
       <Sorting
         label={"Sort by"}
@@ -163,7 +170,7 @@ export default function App() {
         ]}
       />
 
-      <Facet field="type" label="Type" />
+      <Facet field="type" label="Type" filterType="any" />
       <Facet field="mnemonic" label="Category" />
       <h1>New Requirements</h1> 
       <p1> If combination is not listed, it probably doesn't exist </p1>
@@ -174,8 +181,8 @@ export default function App() {
 
       {/* <Facet field="days_full" label="DAYZ [days]" isFilterable={true} /> */}
       <Facet field="dayofweek" label="Day of Week" />
-      <Facet field="start_time" label="Start Time" isFilterable={true} />
-      <Facet field="end_time" label="End Time" isFilterable={true} />
+      <Facet field="start_time" label="Start Time" />
+      <Facet field="end_time" label="End Time" />
       <Facet field="instructionmode" label="Instruction Mode" />
 
       <Facet field="instructor" label="Instructor" isFilterable={true} />
