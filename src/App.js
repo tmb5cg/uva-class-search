@@ -24,7 +24,7 @@ const connector = new AppSearchAPIConnector({
   engineName: "uva-classes-v5",
   hostIdentifier: "host-fradkb"
 });
-// Step #3: Configuration Options
+// Step #3: Configurationnpm 
 const configurationOptions = {
   apiConnector: connector,
   alwaysSearchOnInitialLoad: true,
