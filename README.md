@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here is the site: 
+
+www.tmb5cg.github.io/uva-class-search
+
+You must click the search button to get filters to show up, not sure why 
 
 ## Available Scripts
 
