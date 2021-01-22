@@ -2,8 +2,7 @@
 
 Here is the site: 
 
-www.tmb5cg.github.io/uva-class-search
-
+https://tmb5cg.github.io/uva-class-search
 You must click the search button to get filters to show up, not sure why 
 
 ## Available Scripts
