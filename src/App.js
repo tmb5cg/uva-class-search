@@ -143,7 +143,7 @@ export default function App() {
   bodyContent={<Results titleField="title"  />} // urlField="image_url" />}
   sideContent={
     <div>
-      <p3> Notes + todo </p3>
+      <p3> Notes + todooo </p3>
 
       <ul>
         <li> Click search to display filters/classes </li>
